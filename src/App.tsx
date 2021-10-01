@@ -8,7 +8,7 @@ import {
   IonTabButton,
   IonTabs
 } from "@ionic/react";
-
+import { defineCustomElements } from "@ionic/pwa-elements/loader";
 import { IonReactRouter } from "@ionic/react-router";
 import { image, mail, send } from "ionicons/icons";
 import Tab1 from "./pages/Tab1";
@@ -56,3 +56,4 @@ const App: React.FC = () => (
 );
 
 export default App;
+defineCustomElements(window);
